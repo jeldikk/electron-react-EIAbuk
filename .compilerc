@@ -11,17 +11,23 @@
               }
             }
           ],
-          "react"
+          "react",
         ],
         "plugins": [
           "transform-async-to-generator",
           "transform-es2015-modules-commonjs",
-          "transform-object-rest-spread"
+          "transform-object-rest-spread",
+          "transform-class-properties"
         ],
         "sourceMaps": "inline"
       },
       "text/jade": {
         "pretty": true
+      },
+      "text/css":{
+        "presets":[
+          "bootstrap",
+        ]
       }
     },
     "production": {
@@ -40,7 +46,8 @@
         "plugins": [
           "transform-async-to-generator",
           "transform-es2015-modules-commonjs",
-          "transform-object-rest-spread"
+          "transform-object-rest-spread",
+          "transform-class-properties"
         ],
         "sourceMaps": "none"
       }
